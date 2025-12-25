@@ -20,3 +20,13 @@ Fungsi Iteratif (faktorialIteratIf) Alur kerja:
 - Menggunakan perulangan (for)
 - Perhitungan dilakukan langsung dalam satu fungsi
 - Tidak ada pemanggilan fungsi berulang
+
+## Percobaan 2
+
+1. Pada Percobaan2, terdapat pemanggilan fungsi rekursif hitungPangkat(bilangan, pangkat) pada fungsi main, kemudian dilakukan pemanggilan fungsi hitungPangkat() secara berulangkali. Jelaskan sampai kapan proses pemanggilan fungsi tersebut akan dijalankan!
+
+Alur Kerja:
+- Fungsi pertama kali dipanggil dari main dengan:
+- Selama nilai y > 0, fungsi akan memanggil dirinya sendiri, Mengurangi nilai y sebanyak 1 setiap pemanggilan
+- Proses ini berulang terus hingga y == 0
+
