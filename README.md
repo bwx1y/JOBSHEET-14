@@ -30,3 +30,28 @@ Alur Kerja:
 - Selama nilai y > 0, fungsi akan memanggil dirinya sendiri, Mengurangi nilai y sebanyak 1 setiap pemanggilan
 - Proses ini berulang terus hingga y == 0
 
+2. Tambahkan kode program untuk mencetak deret perhitungan pangkatnya. Contoh: hitungPangkat(2,5) dicetak 2x2x2x2x2x1 = 32
+
+```java
+public class Percobaan2 {
+    static int hitungPangkat (int x, int y) {
+        if (y ==0) {
+            System.out.print("1");
+            return (1);
+        } else {
+            System.out.print(x + "x");
+            return (x* hitungPangkat(x, y-1));
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Bilangan yang dihitung: ");
+        int bilangan = sc.nextInt();
+        System.out.print("Pangkat: ");
+        int pangkat = sc.nextInt();
+
+        System.out.println("=" + hitungPangkat(bilangan, pangkat));
+    }
+}
+```
