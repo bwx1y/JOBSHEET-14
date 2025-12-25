@@ -55,3 +55,19 @@ public class Percobaan2 {
     }
 }
 ```
+
+## Percobaan 3
+
+1. Pada Percobaan3, sebutkan blok kode program manakah yang merupakan “base case” dan “recursion call”! 
+
+- Base Case:
+```
+if (tahun == 0) {
+    return saldo;
+}
+```
+
+- Recursion Call: 
+```
+return 1.11 * hitungLaba(saldo, tahun - 1);
+```
